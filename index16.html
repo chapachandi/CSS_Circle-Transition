@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Transition</title>
+    <style>
+        .circle-container {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 100%;
+            border: 10px solid #d7d0d0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            border-top: 10px solid #f83e3e;
+        }
+        .radius {
+            position: absolute;
+            width: 51%;
+            height: 6px;
+            left: 50%;
+            top: 50%;
+            background: red;
+            transform-origin: left center;
+            transform: rotate(-48deg);
+        }
+        .small-circle{
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            border-radius: 100%;
+            background-color: red;
+            top: -4px;
+            left: 99px;
+            display: flex;
+            flex-direction: column;
+        }
+        section:hover{
+            transform: rotate(360deg);
+            transition: all 2s;
+        }
+
+    </style>
+</head>
+<body>
+<section class="circle-container">
+    <div class="radius">
+        <div class="small-circle"></div>
+    </div>
+</section>
+</body>
+</html>
